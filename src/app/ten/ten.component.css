@@ -1,0 +1,19 @@
+th{
+    border: 2px solid black;
+}
+td{
+    border: 2px solid black;
+}
+table{
+    border: 2px solid black;
+    margin-left: 50px;
+}
+.bk-yellow{
+    background-color: yellow;
+}
+.bk-red{
+    background-color: red;
+}
+.d1{
+    display: flex;
+}

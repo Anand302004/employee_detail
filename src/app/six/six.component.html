@@ -1,0 +1,33 @@
+<input type="text" placeholder="src" [(ngModel)]="input">
+<button (click)="addurl()">add image</button>
+<button (click)="addcolor()">add color</button>
+<br>
+
+<button (click)="setClass('aqua')">bk-aqua</button>
+<button (click)="setClass('red')">bk-red</button>
+<button (click)="setClass('yellow')">bk-yellow</button>
+<button (click)="setClass('blue')">bk-blue</button>
+<br>
+<button (click)="setborder('solid')">solid</button>
+<button (click)="setborder('dotted')">dotted</button>
+<button (click)="setborder('dashed')">dashed</button>
+<br>
+<button (click)="setradius('radius1')">radius-20%</button>
+<button (click)="setradius('radius2')">radius-40%</button>
+<button (click)="setradius('radius3')">radius-60%</button>
+<br>
+<button (click)="setimg('bg_img1')">bg_img1</button>
+<button (click)="setimg('bg_img2')">bg_img2</button>
+<button (click)="setimg('bg_img3')">bg_img3</button>
+<br>
+<button (click)="setmarginleft()">margin left add</button>
+<button (click)="removemarginleft()"> margin left remove</button><br>
+<button (click)="setmargintop()">margin top add</button>
+<button (click)="removemargintop()"> margin top remove</button>
+<br>
+<button (click)="remove()">remove</button>
+
+<div class="d1"
+    [ngClass]="[bk_color ? bk_color : '', border ? border : '' , bk_img ? bk_img : '', radius ? radius : ''] "
+    [ngStyle]="{'margin-left': margin +'%', 'margin-top': margin2 +'%' ,'background-color': color}">
+    <img [src]="imgurl" alt=""></div>

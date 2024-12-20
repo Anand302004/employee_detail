@@ -1,0 +1,24 @@
+
+
+<div>
+    <table>
+        <tr>
+           <td> <input type="number" placeholder="val1" [(ngModel)]="val1"></td>
+            <td><input type="number" placeholder="val2" [(ngModel)]="val2"></td>
+        </tr>
+        <tr>
+            <td (click)="plus()">+</td>
+            <td (click)="min()">-</td>
+        </tr>
+        <tr>
+            <td (click)="mul()">*</td>
+            <td (click)="div()">/</td>
+        </tr>
+        <tr>
+            <td (click)="mod()">%</td>
+           
+        </tr>
+        
+    </table>
+    <div class="fullw">ans {{cal}}</div>
+</div>

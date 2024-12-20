@@ -1,0 +1,13 @@
+<h1>parent to child</h1>
+
+<app-first [in1]="input1" [in2]="input2" [in3]="input3" [in4]="input4" [in5]="input5"></app-first><br>
+
+<button (click)="inc()">+</button>
+<button (click)="dec()">-</button><br>
+<input type="text" [(ngModel)]="input2"> <br>
+<button (click)="check()">{{!input3}}</button><br>
+<input type="number" name="" id="" [(ngModel)]="input4" >
+<input type=" number" name="" id="" [(ngModel)]="input5"><br>
+parent component number: {{input1}} <br>
+parent component string: {{input2}} <br>
+parent component : {{input3}} <br>

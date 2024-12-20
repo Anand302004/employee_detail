@@ -1,0 +1,30 @@
+<select name="color" id="" [(ngModel)]=color (change)="colorchange()">
+    <option value="green">green</option>
+    <option value="red">red</option>
+    <option value="yellow">yellow</option>
+</select>
+
+<input type="number" [(ngModel)]=num (change)="check()">
+<div class="d1" [ngStyle]='{"background-color": setcolor }'> {{msg}}
+    <div class="d2" [ngStyle]="{'background-color': setgender}"></div>
+    <input type="password" name="" id="">
+</div>
+<!-- <input type="radio" value="male" id="male" name="gender" (click)="checkgender('male')">
+<label for="male">male</label><br>
+
+<input type="radio" value="female" id="female" name="gender" (click)="checkgender('female')">
+<label for="female">female</label><br> -->
+
+
+
+<!-- *************************************************************** -->
+
+<input type="radio" value="male" id="male" [(ngModel)]=gender (click)="checkgender1()">
+<label for="male">male</label><br>
+
+<input type="radio" value="female" id="female" [(ngModel)]=gender (click)="checkgender1()">
+<label for="female">female</label><br>
+
+<input type="password" name="" id="">
+
+<!-- {{demo4 |json}} -->

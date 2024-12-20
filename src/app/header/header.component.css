@@ -1,0 +1,11 @@
+button:hover{
+    background-color: orange;
+}
+button{
+    
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: yellow;
+    color: blue;
+}

@@ -1,0 +1,73 @@
+.d1 {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+}
+img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+button{
+    
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: rgb(255, 187, 0);
+    color: red;
+}
+button:hover{
+    background-color: chartreuse;
+}
+
+.aqua {
+    background-color: aqua;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.solid {
+    border: 5px solid rgb(149, 242, 10);
+}
+
+.dotted {
+    border: 5px dotted rgb(149, 242, 10);
+}
+
+.dashed {
+    border: 5px dashed rgb(149, 242, 10);
+}
+
+.bg_img1 {
+    background-image: url('https://images4.alphacoders.com/115/thumb-1920-115716.jpg');
+}
+
+.bg_img2 {
+    background-image: url('https://wallpaperset.com/w/full/6/1/7/90599.jpg');
+}
+
+.bg_img3 {
+    background-image: url('https://wallpaperboat.com/wp-content/uploads/2019/10/free-website-background-23.jpg');
+}
+
+.radius1 {
+    border-radius: 20%
+}
+
+.radius2 {
+    border-radius: 40%
+}
+
+.radius3 {
+    border-radius: 60%
+}

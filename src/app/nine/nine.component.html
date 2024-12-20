@@ -1,0 +1,17 @@
+<p>nine works!</p>
+<img *ngFor="let url of imgulrs" [src]="url" alt="">
+<input *ngFor="let typ of types " [type]="typ">
+
+<div class="d2">
+    <div class="div1" *ngFor="let col of color " [ngStyle]="{'background-color': col }"></div>
+</div>
+
+<input type="number" [(ngModel)]="num">
+<button (click)="add()">add</button>
+<button (click)="per()">per</button>
+total Marks: {{total}}
+percentage: {{persentage}} %
+<div *ngFor="let i of number">
+    {{i}}
+</div>
+<p *ngFor="let i of cls" [ngClass]="[i]"></p>

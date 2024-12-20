@@ -1,0 +1,50 @@
+<input type="text" name="products"  placeholder="product-name" [(ngModel)]="product">
+<input type="number" name="prices"  placeholder="price" [(ngModel)]="price">
+<input type="number" name="qty"  placeholder="quantity" [(ngModel)]="quantity">
+<select name="gstrate" id="gstrate" [(ngModel)]="gstrate">
+    <option value="0.12">12%</option>
+    <option value="0.18">18%</option>
+    <option value="0.28">28%</option>
+</select>
+<button (click)="addtable()">submit</button>
+<div class="d1">
+    <table>
+        <tr>
+         <th>sr no</th>
+         <th>product name</th>
+         <th>quantity</th>
+         <th>gstrate</th>
+         <th>price</th>
+         <th>total amount</th>
+        </tr>
+     <tr *ngFor="let i of productname; let j = index">
+         <td >{{j}}</td>
+         <td >{{productname[j]}}</td>
+         <td>{{quantitys[j]}}</td>
+         <td > {{gstrates[j]}}</td>
+         <td>{{prices2[j]}}</td>
+         <td >{{prices[j]}}</td>
+     </tr>
+     </table>
+     <table>
+         <tr>
+          <th>sr no</th>
+          <th>product name</th>
+          <th>quantity</th>
+          <th>gstrate</th>
+          <th>total amount</th>
+         </tr>
+         
+         <ng-container *ngFor="let i of productname; let j = index">
+         
+             <tr [ngClass]="[quantitys[j]>10 ? 'bk-yellow' : 'bk-red']">
+                 <td >{{j}}</td>
+                 <td >{{productname[j]}}</td>
+                 <td>{{quantitys[j]}}</td>
+                 <td > {{gstrates[j]}}</td>
+                 <td >{{prices[j]}}</td>
+             </tr>
+            
+         </ng-container>
+      </table>
+</div>
